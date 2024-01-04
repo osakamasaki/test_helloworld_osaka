@@ -4,12 +4,12 @@ import streamlit as st
 st.title('st.experimental_get_query_params')
 
 # URLパラメータを取得して表示
-params = st.experimental_get_query_params()
+params = {'FirstName' :hoge ,'Lasntname':Fuga}
 if params is None:
     st.write('get_query_params(): None')
 else:
     st.write('get_query_params(): not None')
-if isinstance(params, dict):
+if isinstance(params, dict):    #paamsが辞書旗ならば発動する
     st.write('get_query_params(): dict')
     l = len(params)
     st.write('get_query_params(): len == {}'.format(l))
