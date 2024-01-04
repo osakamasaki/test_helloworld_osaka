@@ -4,7 +4,8 @@ import streamlit as st
 st.title('st.experimental_get_query_params')
 
 # URLパラメータを取得して表示
-params = {'FirstName' :hoge ,'Lasntname':Fuga}
+params = st.experimental_get_query_params()
+{"show_map": ["True"], "selected": ["asia", "america"]}
 if params is None:
     st.write('get_query_params(): None')
 else:
