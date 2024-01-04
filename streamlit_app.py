@@ -5,7 +5,7 @@ st.title('st.experimental_get_query_params')
 
 # URLパラメータを取得して表示
 params = st.experimental_get_query_params()
-params = {"show_map": ["True"], "selected": ["asia", "america"]}
+params = http://localhost:8501/?show_map=True&selected=asia&selected=america
 if params is None:
     st.write('get_query_params(): None')
 else:
